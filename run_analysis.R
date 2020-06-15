@@ -97,6 +97,6 @@ tidyData <- aggregate(MergedDataSet[,names(MergedDataSet)
                       (activityId=MergedDataSet$activityId,
                               subjectId=MergedDataSet$subjectId),mean);
 
-# Export tidyData set 
+# Export tidyData set :
 
 write.table(tidyData, './FinalTidyData.txt',row.names=FALSE,sep='\t')
